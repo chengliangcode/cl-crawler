@@ -1,4 +1,4 @@
-package com.cl.code.crawler.value.object;
+package com.cl.code.crawler.entity;
 
 /**
  * 访问器设置
@@ -18,5 +18,10 @@ public class AccessorConfig {
      * 重试间隔（单位：ms）
      */
     private Long retryInterval;
+
+    public AccessorConfig(Integer retryNumber, Long retryInterval) {
+        this.retryNumber = retryNumber;
+        this.retryInterval = retryInterval;
+    }
 
 }

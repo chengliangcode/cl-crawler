@@ -1,4 +1,4 @@
-package com.cl.code.crawler.domain;
+package com.cl.code.crawler.entity;
 
 import com.cl.code.crawler.value.object.SourceURL;
 
