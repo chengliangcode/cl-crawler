@@ -6,8 +6,7 @@ import java.time.Instant;
  * 时间点
  *
  * @author chengliang
- * @version 1.0.0
- * @since 2023/3/22 15:37
+ * @since 1.0.0
  */
 public class PointTime {
 
@@ -25,6 +24,10 @@ public class PointTime {
 
     public Long getTime() {
         return this.time.toEpochMilli();
+    }
+
+    public boolean isFuture() {
+        return this.time.isAfter(Instant.now());
     }
 
 }

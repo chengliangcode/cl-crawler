@@ -20,4 +20,39 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.cl.code</groupId>
+            <artifactId>charlie-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>2.0.26</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.jianwoo.openai</groupId>
+            <artifactId>ChatGpt-API-SDK</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+
+    </dependencies>
+
 </project>

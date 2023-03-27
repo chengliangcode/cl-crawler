@@ -2,12 +2,13 @@ package com.cl.code.crawler.entity;
 
 import com.cl.code.crawler.value.object.SourceURL;
 
+import java.net.URL;
+
 /**
  * 爬取源
  *
  * @author chengliang
- * @version 1.0.0
- * @since 2023/3/22 14:32
+ * @since 1.0.0
  */
 public class CrawlSource {
 
@@ -21,6 +22,14 @@ public class CrawlSource {
         }
         this.name = name;
         this.url = url;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public URL getUrl() {
+        return this.url.getUrl();
     }
 
 }

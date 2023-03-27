@@ -1,12 +1,22 @@
 package com.cl.code.crawler.entity;
 
+import com.cl.code.crawler.value.object.ID;
+
 /**
  * 单次任务
  *
  * @author chengliang
- * @version 1.0.0
- * @since 2023/3/23 8:54
+ * @since 1.0.0
  */
-public class OnceTask extends Task {
+public class OnceTask extends AbstractTask {
+
+    public OnceTask(ID taksId, CrawlSource crawlSource) {
+        super(taksId, crawlSource);
+    }
+
+    public void start() {
+        System.out.println("OnceTask.start");
+        super.start();
+    }
 
 }

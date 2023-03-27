@@ -5,8 +5,7 @@ import java.net.URL;
 
 /**
  * @author chengliang
- * @version 1.0.0
- * @since 2023/3/22 14:31
+ * @since 1.0.0
  */
 public class SourceURL {
 
@@ -28,6 +27,11 @@ public class SourceURL {
     }
 
     public String getStringUrl() {
+        return url.toString();
+    }
+
+    @Override
+    public String toString() {
         return url.toString();
     }
 
